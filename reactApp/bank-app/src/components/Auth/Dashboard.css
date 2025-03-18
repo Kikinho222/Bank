@@ -1,0 +1,78 @@
+/* Dashboard.css */
+
+/* General container styling */
+.dashboard-container {
+    background-image: url("./golden-abstract-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header and Welcome message */
+  .welcome-message {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Paper for Account Information */
+  .account-info {
+    background-color: #333333;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  /* Section title */
+  .section-title {
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: gold;
+  }
+  
+  /* Grid styling for the user account details */
+  .account-info .MuiGrid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Transaction Paper Styling */
+  .transactions {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Grid styling for transactions */
+  .transactions .MuiGrid-item {
+    margin-bottom: 15px;
+  }
+  
+  /* Optional: Style for empty state when no transactions */
+  .transactions .MuiTypography-body1 {
+    color: #6c757d;
+    text-align: center;
+  }
+
+  /* Ensure responsiveness for mobile screens */
+  @media (max-width: 600px) {
+    .account-info, .transactions {
+      padding: 15px;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .welcome-message {
+      font-size: 1.5rem;
+    }
+  }
+  

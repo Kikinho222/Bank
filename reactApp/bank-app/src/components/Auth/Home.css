@@ -1,0 +1,192 @@
+/* General Styles for Home Page */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content starts at the top */
+    background-image: url("./golden-abstract-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 0 20px; /* Adds padding to avoid elements being too close to edges */
+}
+
+/* Header Styles */
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100%; /* Ensure header takes full width */
+    max-width: 1000px; /* Limits the maximum width */
+    margin-top: 20px; /* Adds spacing to the top of the header */
+}
+
+/* Header Title */
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Header Subtitle */
+.header p {
+    font-size: 18px;
+}
+
+/* Logo Container and Styling */
+.logo-container {
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: -50px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.logo {
+    border-radius: 50px;
+    border: 3px solid gold;
+    width: 450px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show cursor pointer when hovering over logo */
+}
+
+/* Feature Section */
+.features {
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.features h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black; /* Gold shadow around the text */
+}
+
+/* Feature Cards Layout */
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps the cards on smaller screens */
+}
+
+/* Individual Feature Card */
+.card {
+    background-image: url("./solidBlackBackground.jpg");
+    color: gold;
+    border: 3px solid gold;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align text to the left */
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Call-to-Action (CTA) Section */
+.cta {
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: auto;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black;
+}
+
+.cta p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    flex-direction: row; /* Make the buttons display horizontally */
+    align-items: center;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+    width: 100%;
+    margin-top: auto; /* Space between the paragraph and buttons */
+}
+
+.cta-button {
+    background-image: url("./solidBlackBackground.jpg");
+    /*background-color: solid black;*/
+    color: gold;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 3px solid gold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 250px; /* Max width for buttons */
+    text-align: center; /* Centers the text inside buttons */
+}
+
+.cta-button:hover {
+    background-image: none;
+    background-color: gold;
+    color: black;
+    border: 3px solid black;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 90%; /* Make buttons smaller on mobile */
+    }
+}

@@ -1,0 +1,50 @@
+
+.celebration-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #ff1493, #ff4500, #00ffff);
+    background-size: 400% 400%;
+    animation: gradientBackground 5s ease infinite;
+  }
+  
+  .celebration-content {
+    text-align: center;
+    position: relative;
+  }
+  
+  .jumping-image {
+    width: 200px;
+    height: auto;
+    animation: jump 0.25s infinite alternate;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .celebration-text {
+    font-size: 2rem;
+    color: gold;
+    margin-top: 20px;
+  }
+  
